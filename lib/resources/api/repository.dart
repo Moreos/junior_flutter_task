@@ -9,4 +9,7 @@ class Repository {
 
   Future<RootResponse> fetchActionInfo(int id) =>
       mallApiProvider.fetchActionInfo(id);
+
+  Future<RootResponse> fetchPromos(int pageNumber, int count) =>
+      mallApiProvider.fetchPromos(pageNumber, count);
 }
